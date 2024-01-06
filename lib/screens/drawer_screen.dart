@@ -20,55 +20,55 @@ class DrawerScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              DrawerItem(
-                title: kDrawerTitleFirstText,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ColoredCircle(
-                      color: kMainGreenColor,
-                      onPressed: (color) {
-                        file.saveTheme(color: "green");
-                        colorChanged(color);
-                      },
-                    ),
-                    ColoredCircle(
-                      color: kMainBlueColor,
-                      onPressed: (color) {
-                        file.saveTheme(color: "blue");
-                        colorChanged(color);
-                      },
-                    ),
-                    ColoredCircle(
-                      color: kMainOrangeColor,
-                      onPressed: (color) {
-                        file.saveTheme(color: "orange");
-                        colorChanged(color);
-                      },
-                    ),
-                    ColoredCircle(
-                      color: kMainPinkColor,
-                      onPressed: (color) {
-                        file.saveTheme(color: "pink");
-                        colorChanged(color);
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 5.h,
-              ),
-              DrawerItem(
-                title: kDrawerTitleSecondText,
-                desc: kDrawerAboutDescText,
-              ),
-              SizedBox(
-                height: 5.h,
-              ),
-              DrawerItem(
-                  title: kDrawerTitleThirdText,
-                  desc: kDrawerDependenciesDescText),
+              // DrawerItem(
+              //   title: kDrawerTitleFirstText,
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //     children: [
+              //       ColoredCircle(
+              //         color: kMainGreenColor,
+              //         onPressed: (color) {
+              //           file.saveTheme(color: "green");
+              //           colorChanged(color);
+              //         },
+              //       ),
+              //       ColoredCircle(
+              //         color: kMainBlueColor,
+              //         onPressed: (color) {
+              //           file.saveTheme(color: "blue");
+              //           colorChanged(color);
+              //         },
+              //       ),
+              //       ColoredCircle(
+              //         color: kMainOrangeColor,
+              //         onPressed: (color) {
+              //           file.saveTheme(color: "orange");
+              //           colorChanged(color);
+              //         },
+              //       ),
+              //       ColoredCircle(
+              //         color: kMainPinkColor,
+              //         onPressed: (color) {
+              //           file.saveTheme(color: "pink");
+              //           colorChanged(color);
+              //         },
+              //       ),
+              //     ],
+              //   ),
+              // ),
+              // SizedBox(
+              //   height: 5.h,
+              // ),
+              // DrawerItem(
+              //   title: kDrawerTitleSecondText,
+              //   desc: kDrawerAboutDescText,
+              // ),
+              // SizedBox(
+              //   height: 5.h,
+              // ),
+              // DrawerItem(
+              //     title: kDrawerTitleThirdText,
+              //     desc: kDrawerDependenciesDescText),
             ],
           ),
         ),
